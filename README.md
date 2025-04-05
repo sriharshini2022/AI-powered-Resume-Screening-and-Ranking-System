@@ -1,114 +1,157 @@
-AI-powered Resume Screening and Ranking System 🤖📄
+# 🤖📄 AI-powered Resume Screening and Ranking System
+
 A smart solution designed to automate and optimize the resume screening process using Artificial Intelligence (AI). This system helps organizations efficiently evaluate and rank resumes based on job descriptions, making the hiring process faster and more reliable.
 
-Table of Contents 📑
-Project Overview
-Features
-Tech Stack
-Installation
-Usage
-Example
-Contributing
-License
-Acknowledgements
-Project Overview 🚀
-The AI-powered Resume Screening and Ranking System leverages natural language processing (NLP) techniques and machine learning models to analyze resumes and match them to job descriptions. By using pre-trained models, it ranks resumes based on relevance and qualifications. This system aims to reduce manual effort, eliminate bias, and speed up the hiring process for HR professionals.
+---
 
-Key Features:
-AI-powered ranking: Automatically ranks resumes according to the relevance to the job description.
-Resume parsing: Extracts key details from resumes including skills, education, experience, and contact information.
-Job description matching: Compares resume content with job requirements and ranks based on match score.
-Data visualization: Presents results in an easy-to-understand format (e.g., score, ranking).
-Optimized for HR workflows: Supports easy integration into HR management systems.
-Features 🎉
-Automated Resume Screening: The system automatically processes resumes and categorizes them based on relevance.
-Ranking Algorithm: Ranks resumes in descending order of match to the job description.
-Customizable: Allows for customizable scoring criteria, such as skills, experience, or education.
-AI-Powered Suggestions: Recommends top candidates based on analysis of resumes and job descriptions.
-Efficiency Boost: Reduces time and effort spent on manual resume evaluation.
-Data Insights: Visualizes important data such as top candidate skills, keywords, and more.
-Tech Stack 🛠️
-The system is built using a combination of powerful technologies to provide accurate and efficient resume screening:
+## 📑 Table of Contents
 
-Python – Primary programming language.
-TensorFlow / Keras – Used for AI and machine learning models.
-Natural Language Processing (NLP) – Text analysis using NLP libraries such as spaCy and NLTK.
-Flask / FastAPI – Web framework for building APIs for integration with other systems.
-Scikit-learn – For traditional machine learning techniques like classification and ranking.
-Installation 📦
-To set up and run the project locally, follow these steps:
+- [Project Overview 🚀](#project-overview-🚀)  
+- [Features 🎉](#features-🎉)  
+- [Tech Stack 🛠️](#tech-stack-🛠️)  
+- [Installation 📦](#installation-📦)  
+- [Usage 🧪](#usage-🧪)  
+- [Example 💻](#example-💻)  
+- [Contributing 🤝](#contributing-🤝)  
+- [License 📄](#license-📄)  
+- [Acknowledgements 🙌](#acknowledgements-🙌)  
 
-Clone the repository:
+---
 
-bash
-Copy code
+## Project Overview 🚀
+
+The **AI-powered Resume Screening and Ranking System** leverages natural language processing (NLP) techniques and machine learning models to analyze resumes and match them to job descriptions. By using pre-trained models, it ranks resumes based on relevance and qualifications.
+
+### Key Benefits:
+- ✅ Reduces manual effort
+- ✅ Minimizes hiring bias
+- ✅ Speeds up the hiring process
+
+---
+
+## Features 🎉
+
+- 🔍 **AI-powered Ranking**: Automatically ranks resumes based on relevance to the job description.  
+- 📄 **Resume Parsing**: Extracts details like skills, education, experience, and contact info.  
+- 📌 **Job Matching**: Compares resume content with job requirements.  
+- 📊 **Data Visualization**: Displays match scores and top skills visually.  
+- 🔧 **Customizable**: Scoring logic can be adjusted (skills, experience, education, etc.)  
+- 🔄 **HR Workflow Integration**: Easily integrates into existing HR tools and pipelines.
+
+---
+
+## Tech Stack 🛠️
+
+- **Python** – Core programming language  
+- **TensorFlow / Keras** – AI and ML modeling  
+- **spaCy / NLTK** – NLP and text analysis  
+- **Scikit-learn** – Machine learning utilities  
+- **Flask / FastAPI** – API development  
+
+---
+
+## Installation 📦
+
+Follow these steps to set up and run the project locally:
+
+### 1. Clone the Repository
+```bash
 git clone https://github.com/sriharshini2022/AI-powered-Resume-Screening-and-Ranking-System.git
 cd AI-powered-Resume-Screening-and-Ranking-System
-Install required dependencies:
+```
 
-bash
-Copy code
+### 2. Install Dependencies
+```bash
 pip install -r requirements.txt
-Set up the environment (make sure you have Python 3.x installed):
+```
 
-For local testing, you might want to use a virtual environment (optional but recommended):
-
-bash
-Copy code
+### 3. Create Virtual Environment (Optional)
+```bash
 python -m venv venv
-source venv/bin/activate  # For macOS/Linux
-venv\Scripts\activate     # For Windows
-Run the application:
+source venv/bin/activate      # macOS/Linux
+venv\Scripts\activate         # Windows
+```
 
-bash
-Copy code
+### 4. Run the Application
+
+#### For Flask:
+```bash
 python app.py
-Or for FastAPI:
+```
 
-bash
-Copy code
+#### For FastAPI:
+```bash
 uvicorn app:app --reload
-Navigate to http://localhost:8000 (or whichever port you specified) in your browser.
+```
 
-Usage 🧪
-Input
-To use the system, you'll need to upload:
+Then navigate to [http://localhost:8000](http://localhost:8000)
 
-Job Description: A text file or document outlining the job role and requirements.
-Resumes: Multiple resumes (in PDF, DOCX, or plain text format) of candidates.
-Process
-Upload the job description.
-Upload resumes to the system.
-The system will parse the resumes and compare each resume to the job description.
-It will rank candidates based on the match between the resume content and the job description.
-Output
-Ranked Resume List: Candidates are ranked from the most relevant to the least relevant.
-Match Scores: Each candidate will have a score indicating how well their resume matches the job description.
-Visualizations: Graphs or charts to show the distribution of key skills and experience across all resumes.
-Example 💻
-Job Description
-For example, if the job description is for a Data Scientist role, the system will highlight key skills like Python, Machine Learning, Data Analysis, and Statistics.
+---
 
-Sample Resume
-John Doe's Resume might contain skills like Python, SQL, Data Visualization, and Machine Learning.
+## Usage 🧪
 
-Result: The system ranks John Doe's resume highly if it matches the job description for the Data Scientist role based on skills and experience.
+### Input:
+- **Job Description**: Upload as a text file or document.
+- **Resumes**: Upload multiple resumes (PDF, DOCX, TXT).
 
-Contributing 🤝
-We welcome contributions from the open-source community! If you'd like to contribute to this project, please follow these steps:
+### Process:
+1. Upload job description.
+2. Upload resumes.
+3. System parses and compares each resume.
+4. Resumes are ranked based on job relevance.
 
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make your changes and commit them (git commit -m 'Add new feature').
-Push to the branch (git push origin feature-branch).
-Open a pull request.
-Please make sure to follow the code of conduct and include tests where applicable.
+### Output:
+- 🔢 **Ranked Resume List**
+- 🧠 **Match Scores**
+- 📈 **Skill/Experience Visualizations**
 
-License 📄
-This project is licensed under the MIT License - see the LICENSE file for details.
+---
 
-Acknowledgements 🙌
-spaCy and NLTK for Natural Language Processing.
-TensorFlow and Keras for machine learning models.
-Scikit-learn for traditional ML algorithms.
-Open-source contributors who have helped improve the NLP models and algorithms.
+## Example 💻
+
+### Job Description:
+Looking for a **Data Scientist** with skills in Python, Machine Learning, Data Analysis, and Statistics.
+
+### Resume:
+**John Doe** – Skills include Python, SQL, Data Visualization, Machine Learning.
+
+### Result:
+John Doe is ranked highly due to strong alignment with the required skills.
+
+---
+
+## Contributing 🤝
+
+We welcome contributions from the community!  
+
+### Steps:
+1. Fork the repository.
+2. Create a feature branch:
+   ```bash
+   git checkout -b feature-branch
+   ```
+3. Make changes and commit:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push and open a Pull Request:
+   ```bash
+   git push origin feature-branch
+   ```
+
+Please follow the [Code of Conduct](CODE_OF_CONDUCT.md) and include tests where needed.
+
+---
+
+## License 📄
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Acknowledgements 🙌
+
+- [spaCy](https://spacy.io/) and [NLTK](https://www.nltk.org/) for Natural Language Processing  
+- [TensorFlow](https://www.tensorflow.org/) and [Keras](https://keras.io/) for machine learning  
+- [Scikit-learn](https://scikit-learn.org/) for traditional ML  
+- Open-source contributors and the community for ongoing improvements  
